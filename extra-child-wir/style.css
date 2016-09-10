@@ -1,0 +1,181 @@
+/*
+ Theme Name:   Extra Child W-I-R Schule
+ Theme URI:    http://example.com/extra-child-wir/
+ Description:  Extra Child Theme
+ Author:       Wir Schule
+ Author URI:   http://wir-schule.de
+ Template:     Extra
+ Version:      0.0.5
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         no-tags
+ Text Domain:  extra-child-wir
+*/
+
+
+/************************************************************
+Inhaltsverzeichnis
+************************************************************
+
+1. Globale Einstellungen
+2. Typographie
+3. Menüs
+4. Header und Footer
+5. Positionen und Abstände
+6. Spezielle Elemente
+7. Module und Widgets
+8. Sonstiges
+*/
+
+
+/************************************************************
+1. Globale Einstellungen
+************************************************************/
+
+
+/************************************************************
+2. Typographie
+***********************************************************
+
+Wichtige Einstellungen in Wordpress unter 
+"Extra->Theme Customizer->General->Typography Settings":
+* Heading Text Size: 14
+* Body Text Size: 14
+* Font Style: alles deaktivieren
+* Heading Font / Body Font: Default
+* KEINE Farben einstellen
+
+
+*/
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #323232;	
+}
+h1 {
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+    font-size: 36px !important; 
+    letter-spacing: 3px;
+    color: #C52424;
+}
+h2 {
+    font-size: 22px;
+    color: #C52424;
+}
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: ##323232;
+}
+
+
+a:link, a:visited, a:hover, a:active {
+    font-weight: bold;
+    color: #86BC25 !important;
+}
+blockquote {
+    font-size: 22px;
+    font-style: oblique;
+    font-weight: normal;
+    color: #646464;
+    border: 0px;
+}
+blockquote p:first-child:before { content:"\00bb"; }
+blockquote p:last-child:after { content:"\00ab"; }
+
+
+/************************************************************
+3. Menüs
+************************************************************/
+#et-navigation a:link, 
+#et-navigation a:visited, 
+#et-navigation a:hover, 
+#et-navigation a:active {
+	color: #ffffff !important;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+#et-navigation current-menu-item {
+	font-weight: bold;
+}
+
+#et-secondary-menu {
+  display: block !important;
+
+}
+
+#et-secondary-menu a {
+  display: inline !important;
+}
+#et-secondary-menu li
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+/************************************************************
+4. Header und Footer
+************************************************************/
+
+#main-header .container {
+	background: #86BC25;
+}
+
+/* remove "powered by wordpress" */
+#footer-info {
+    display: none;
+}
+
+/* remove header (extra social icons, trending posts) */
+#et-info .et-extra-social-icons, #et-trending {
+    display: none !important;
+}
+
+
+/************************************************************
+5. Positionen und Abstände
+************************************************************/
+
+/************************************************************
+6. Spezielle Elemente
+************************************************************/
+
+ul.homepageListe {
+	list-style-type: none;
+}
+
+.whiteboard-table tr, td {
+    border: solid 1px #ffffff;
+    padding: 0.5em;
+}
+table.Teamtabelle
+{
+   border-spacing:20px;
+   padding:10;
+   margin:auto;
+}
+
+table.Teamtabelle td {
+   background: #eeeeee;
+   font-family: 'asapregular', serif;
+   color:#000000;
+   height:80px;
+   margin:10;
+   font-size:2em;
+}
+
+
+/************************************************************
+7. Module und Widgets
+************************************************************/
+
+/************************************************************
+8. Sonstiges
+************************************************************/
+
+
+
