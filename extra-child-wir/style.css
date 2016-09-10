@@ -5,7 +5,7 @@
  Author:       Wir Schule
  Author URI:   http://wir-schule.de
  Template:     Extra
- Version:      0.0.5
+ Version:      0.0.6
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         no-tags
@@ -44,7 +44,6 @@ Wichtige Einstellungen in Wordpress unter
 * Font Style: alles deaktivieren
 * Heading Font / Body Font: Default
 * KEINE Farben einstellen
-
 
 */
 
@@ -102,7 +101,7 @@ blockquote p:last-child:after { content:"\00ab"; }
 	font-weight: bold;
 }
 
-#et-secondary-menu {
+header.header .et-trending #et-secondary-menu {
   display: block !important;
 
 }
@@ -122,7 +121,18 @@ blockquote p:last-child:after { content:"\00ab"; }
 ************************************************************/
 
 #main-header .container {
-	background: #86BC25;
+  background: #86BC25;
+}
+#main-header .container a.logo:after {
+   content: "Wünschen - Initiieren - Realisieren";
+ } 
+/* Style für "wünschen - initiieren - realisieren" */
+#main-header .container a.logo {
+    font-family: 'Amatic SC', cursive;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-size: 22px;
+
 }
 
 /* remove "powered by wordpress" */
@@ -134,6 +144,7 @@ blockquote p:last-child:after { content:"\00ab"; }
 #et-info .et-extra-social-icons, #et-trending {
     display: none !important;
 }
+
 
 
 /************************************************************
