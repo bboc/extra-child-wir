@@ -105,33 +105,53 @@ header.header .et-trending #et-secondary-menu {
   display: block !important;
 
 }
+div.et-trending {
 
+  padding: 0px;
+
+}
+#et-secondary-menu {
+  position: relative !important;
+  padding: 0px 5px !important;
+  margin: 10px 0px;
+  width: 100% !important;
+  background: #ffffff;
+}
 #et-secondary-menu a {
   display: inline !important;
 }
-#et-secondary-menu li
-{
+#et-secondary-menu li.menu-item {
   display: inline;
   list-style-type: none;
-  padding-right: 20px;
+  margin: 0px 20px 0px 0px;
+  padding: 0px;
 }
 
 /************************************************************
 4. Header und Footer
 ************************************************************/
 
+
+#top-header {
+  background: #ffffff;
+}
+#main-header,
 #main-header .container {
   background: #86BC25;
 }
+
 #main-header .container a.logo:after {
    content: "Wünschen - Initiieren - Realisieren";
- } 
+}
+#header-tagline {
+}
+
 /* Style für "wünschen - initiieren - realisieren" */
 #main-header .container a.logo {
     font-family: 'Amatic SC', cursive;
     color: #ffffff !important;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 22px;  
 
 }
 
@@ -145,7 +165,29 @@ header.header .et-trending #et-secondary-menu {
     display: none !important;
 }
 
-
+#logo-world {
+  float:left;
+}
+#schule-footer {
+  color: #ffffff;
+}
+#logo-world {
+  margin-right: 20px;
+}
+#schule-footer-text a:link, 
+#schule-footer-text a:visited, 
+#schule-footer-text a:hover, 
+#schule-footer-text a:active {
+  color: #ffffff !important;
+}
+#footer {
+  background: #86BC25 !important;
+}
+#footer.footer_columns_4 .et_pb_extra_column{
+  width: 60%;
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%;
+}
 
 /************************************************************
 5. Positionen und Abstände
