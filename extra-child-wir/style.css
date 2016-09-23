@@ -115,7 +115,7 @@ div.et-trending {
   padding: 0px 5px !important;
   margin: 10px 0px;
   width: 100% !important;
-  background: #ffffff;
+  background: #ffffff !important;
 }
 #et-secondary-menu a {
   display: inline !important;
