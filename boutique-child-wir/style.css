@@ -105,22 +105,22 @@ blockquote p:last-child:after { content:"\00ab"; }
 3. Menüs
 ************************************************************/
 
-#top-menu .menu-item a,
-#top-menu .menu-item a :link, 
-#top-menu .menu-item a :visited, 
-#top-menu .menu-item a :hover, 
-#top-menu .menu-item a :active {
+ 
+ul#top-menu > li.menu-item > a {
 	background-image: none !important;
 	color: #ffffff !important;
 	text-transform: uppercase;
 	font-weight: normal !important;
 }
-#top-menu .current-menu-item a,
-#top-menu .current-menu-item a :link, 
-#top-menu .current-menu-item a :visited, 
-#top-menu .current-menu-item a :hover, 
-#top-menu .current-menu-item a :active {
-	font-weight: bold;
+ul#top-menu > li.current_page_item > a,
+ul#top-menu > li.current_page_item > a:link,
+ul#top-menu > li.current_page_item > a:visited,
+ul#top-menu > li.current_page_item > a:hover,
+ul#top-menu > li.current_page_item > a:active {
+  font-style: normal !important;
+  border-bottom-color: #ffffff;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
 }
 
 ul#secondary-menu > li.current_page_item > a,
@@ -130,24 +130,9 @@ ul#bottom-nav > li.current_page_item > a {
   font-weight: bold !important;
 }
 
-#secondary-menu li.menu-item a,
-#secondary-menu li.menu-item a :link, 
-#secondary-menu li.menu-item a :visited, 
-#secondary-menu li.menu-item a :hover, 
-#secondary-menu li.menu-item a :active,
-#bottom-nav li.menu-item a,
-#bottom-nav li.menu-item a :link, 
-#bottom-nav li.menu-item a :visited, 
-#bottom-nav li.menu-item a :hover, 
-#bottom-nav li.menu-item a :active {
+ul#secondary-menu > li.menu-item > a,
+ul#bottom-nav > li.menu-item > a {
   font-weight: normal !important;
-}
-#secondary-menu li.current-menu-item a,
-#secondary-menu li.current-menu-item a :link, 
-#secondary-menu li.current-menu-item a :visited, 
-#secondary-menu li.current-menu-item a :hover, 
-#secondary-menu li.current-menu-item a :active {
-  font-weight: bold;
 }
 
 
