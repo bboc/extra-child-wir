@@ -50,10 +50,15 @@ Wichtige Einstellungen in Wordpress unter
 
 body,
 #main-content,
+div#main-content-area.container,
+div#breadcrumbs,
+form input,
 #top-menu li a,
 #secondary-menu li a,
 #bottom-nav li a,
 #schule-footer-text,
+h3, 
+h4,
 h4.widget-title {
   font-family: 'Open Sans', sans-serif !important;
 }
@@ -196,6 +201,12 @@ ul#bottom-nav > li.menu-item > a {
 5. Positionen und Abstände
 ************************************************************/
 
+/* padding header */
+
+#header {
+  padding-top: 0px;
+}
+
 #logo {
   padding-left: 10px;
   padding-top: 10px;
@@ -207,6 +218,15 @@ div#search-form {
   margin-right: 15px;
   margin-top: 10px;
 }
+
+/* homepage: header und breadcrumbs ausblenden ist im 
+custom CSS der homepage, im Einstellungen-Menu (≣) des Divi-Builder  */
+
+/* remove extra space below header */
+div#main-products {
+  padding-top: 0px !important;
+}
+
 
 /************************************************************
 6. Spezielle Elemente
@@ -245,7 +265,6 @@ table.Teamtabelle td {
 #sidebar,
 div.widget-content {
   background-image: none !important;
-
 }
 
 
@@ -253,5 +272,7 @@ div.widget-content {
 8. Sonstiges
 ************************************************************/
 
-
-
+#color-stripes,
+#bottom-color-stripes {
+  display: none;
+}
