@@ -59,7 +59,7 @@ form input,
 #schule-footer-text,
 h3, 
 h4,
-h4.widget-title {
+#footer h4.widget-title {
   font-family: 'Open Sans', sans-serif !important;
 }
 
@@ -89,7 +89,6 @@ h3 {
     font-weight: bold !important;
     color: ##323232 !important;
 }
-
 
 a:link, a:visited, a:hover, a:active {
     font-weight: bold !important;
@@ -180,19 +179,30 @@ ul#bottom-nav > li.menu-item > a {
 #logo-world {
   float:left;
 }
-#schule-footer,
-#schule-footer-text strong {
-  color: #ffffff;
+#footer div.footer-widget.widget_text,
+#footer div.footer-widget.widget_text h4.widget-title,
+#footer div.footer-widget.widget_text a:link, 
+#footer div.footer-widget.widget_text a:visited, 
+#footer div.footer-widget.widget_text a:hover, 
+#footer div.footer-widget.widget_text a:active {
+  color: #ffffff !important;
+  text-shadow: none !important;
+
+}
+#footer div.footer-widget.widget_text a {
+  white-space: nowrap; 
+  font-weight: bold;
+}
+#footer div.footer-widget.widget_text h4.widget-title {
+  font-weight: bold;
+  font-size: 14px  !important;
+  text-shadow: none !important;
+  white-space: nowrap;
 }
 #logo-world {
   margin-right: 20px;
 }
-#schule-footer-text a:link, 
-#schule-footer-text a:visited, 
-#schule-footer-text a:hover, 
-#schule-footer-text a:active {
-  color: #ffffff !important;
-}
+  
 #footer {
   background: #86BC25 !important;
 }
