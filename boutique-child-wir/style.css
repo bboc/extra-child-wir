@@ -33,18 +33,34 @@ Inhaltsverzeichnis
 ************************************************************/
 
 
+/* Padding Startseite */
+
+#main-products .entry, .et_pb_section {
+    padding: 0 !important;
+}
+
+.et_pb_module img {
+    margin-bottom: 10px !important;
+}
+
+/* Spalte links 550px
+   wir-grün #86BC25
+   wir-hellgrün #d4e4b1 */
+
 /************************************************************
 2. Typographie
 ***********************************************************
 
 Wichtige Einstellungen in Wordpress unter 
 "Extra->Theme Customizer->General->Typography Settings":
+?? Frage Karsten: Customizing für dieses Theme erfolgt unter "Design->BoutiqueTheme Options"
+oder hab ich da was übersehen?
 * Heading Text Size: 14
 * Body Text Size: 14
 * Font Style: alles deaktivieren
 * Heading Font / Body Font: Default
 * KEINE Farben einstellen
-
+?? Karsten: Da in den Coloriziation Options des Thems bislang nichts definiert ist, muss das wohl doch hier erfolgen.
 */
 
 
@@ -57,6 +73,7 @@ form input,
 #secondary-menu li a,
 #bottom-nav li a,
 #schule-footer-text,
+h2,
 h3, 
 h4,
 #footer h4.widget-title {
@@ -64,7 +81,6 @@ h4,
 }
 
 h1, 
-h2,
 #slogan {
     font-family: 'Amatic SC', cursive !important;
 }
@@ -81,26 +97,35 @@ h1 {
   color: #C52424  !important;
 }
 h2 {
-    font-size: 22px !important;
+    font-size: 24px !important;
     color: #C52424 !important;
 }
 h3 {
     font-size: 14px !important;
     font-weight: bold !important;
-    color: ##323232 !important;
+    color: #323232 !important;
 }
 
 a:link, a:visited, a:hover, a:active {
     font-weight: bold !important;
     color: #86BC25 !important;
 }
+
+
 blockquote {
     font-size: 22px !important;
     font-style: oblique !important;
-    font-weight: normal !important;
+    font-weight: lighter !important;
     color: #646464 !important;
     border: 0px !important;
 }
+
+blockquote p {
+    line-height: 1.5em;
+    font-weight: lighter;
+}
+
+
 blockquote p:first-child:before { content:"\00bb"; }
 blockquote p:last-child:after { content:"\00ab"; }
 
@@ -109,13 +134,23 @@ blockquote p:last-child:after { content:"\00ab"; }
 3. Menüs
 ************************************************************/
 
+ul#top-menu {
+    clear: right;
+    padding: 0;
+}
+
+ul#top-menu a {
+    padding: 0 12px 0 0;
+}
  
 ul#top-menu > li.menu-item > a {
 	background-image: none !important;
 	color: #ffffff !important;
 	text-transform: uppercase;
 	font-weight: normal !important;
+    font-size: x-small;
 }
+
 ul#top-menu > li.current_page_item > a,
 ul#top-menu > li.current_page_item > a:link,
 ul#top-menu > li.current_page_item > a:visited,
@@ -127,17 +162,30 @@ ul#top-menu > li.current_page_item > a:active {
   border-bottom-style: solid;
 }
 
-ul#secondary-menu > li.current_page_item > a,
-ul#bottom-nav > li.current_page_item > a {
-  color: #86BC25 !important;
-  font-style: normal !important;
-  font-weight: bold !important;
+ul#secondary-menu {
+    padding-left: 0 !important;;
 }
 
-ul#secondary-menu > li.menu-item > a,
-ul#bottom-nav > li.menu-item > a {
-  font-weight: normal !important;
+ul#secondary-menu a, ul#bottom-nav  a {
+    font-style: normal !important;
+    font-weight:normal !important;
 }
+
+ul#secondary-menu a:hover, a:visited, ul#bottom-nav  a:hover, a:visited {
+    font-weight: bolder !important;
+}
+
+
+ul#secondary-menu > li.current_page_item > a, ul.bottom-nav > li.current_page_item > a {
+    color: #86BC25 !important;
+    font-style: normal;
+    font-weight:normal !important;
+}
+
+ul#secondary-menu > li.current_page_item > a:hover, a:visited, ul.bottom-nav > li.current_page_item > a:hover, a:visited {
+    font-weight: bolder !important;
+}
+
 
 
 /************************************************************
@@ -148,14 +196,22 @@ ul#bottom-nav > li.menu-item > a {
 #header div.container.clearfix {
   background: #86BC25;
 }
+
+#logo-area {
+    margin: 0 0 0 10px;
+}
+
 #slogan {
-    font-family: 'Amatic SC', cursive !important;
-    color: #ffffff !important;
+    font-family: 'Amatic SC' !important;
+    font-style: normal !important;
+    letter-spacing:2px;
+    color: #d4e4b1 !important;
     text-transform: uppercase;
     font-size: 22px !important;  
 	background-image: none !important;
-
 }
+
+
 /* remove borders and bars */
 #top-area-bg,
 #bottom-area-bg,
@@ -207,6 +263,10 @@ ul#bottom-nav > li.menu-item > a {
   background: #86BC25 !important;
 }
 
+#footer-widgets {
+    padding: 20px 0;
+}
+
 /************************************************************
 5. Positionen und Abstände
 ************************************************************/
@@ -241,6 +301,34 @@ div#main-products {
 /************************************************************
 6. Spezielle Elemente
 ************************************************************/
+
+/* Breadcrumbs */
+#breadcrumbs {
+    padding: 0 0 14px;
+}
+
+#breadcrumbs {
+    color: #d4e4b1 !important;
+}
+
+
+#breadcrumbs a {
+    color:#86BC25 !important;
+    font-weight: normal !important;
+}
+
+#breadcrumbs a:hover {
+    color:#86BC25 !important;
+    font-weight: bold !important;
+}
+
+
+/* Top Area */
+
+#category-inner {
+  padding: 20px 0 0;
+}
+
 
 ul.homepageListe {
 	list-style-type: none;
