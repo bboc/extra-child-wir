@@ -354,6 +354,15 @@ table.Teamtabelle td {
    font-size:2em;
 }
 
+/*Suchergebnisse */
+
+span.price-tag,
+a.add-to-cart.et-shop-item,
+a.more-info,
+.main-product h4.title {
+    display: none;
+}
+
 
 /************************************************************
 7. Module und Widgets
