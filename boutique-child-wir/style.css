@@ -47,6 +47,10 @@ Inhaltsverzeichnis
    wir-grün #86BC25
    wir-hellgrün #d4e4b1 */
 
+.nowrap {
+	white-space: nowrap;
+}
+
 /************************************************************
 2. Typographie
 ***********************************************************
@@ -382,4 +386,8 @@ div.widget-content {
 #color-stripes,
 #bottom-color-stripes {
   display: none;
+}
+
+.slider-startseite a {
+    color: black !important;
 }
