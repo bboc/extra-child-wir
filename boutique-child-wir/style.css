@@ -161,9 +161,10 @@ ul#top-menu > li.current_page_item > a:visited,
 ul#top-menu > li.current_page_item > a:hover,
 ul#top-menu > li.current_page_item > a:active {
   font-style: normal !important;
-  border-bottom-color: #ffffff;
+    font-weight: bold !important;
+ /* border-bottom-color: #ffffff;
   border-bottom-width: 2px;
-  border-bottom-style: solid;
+  border-bottom-style: solid; */
 }
 
 ul#secondary-menu {
@@ -183,7 +184,7 @@ ul#secondary-menu a:hover, a:visited, ul#bottom-nav  a:hover, a:visited {
 ul#secondary-menu > li.current_page_item > a, ul.bottom-nav > li.current_page_item > a {
     color: #86BC25 !important;
     font-style: normal;
-    font-weight:normal !important;
+    font-weight:bold !important;
 }
 
 ul#secondary-menu > li.current_page_item > a:hover, a:visited, ul.bottom-nav > li.current_page_item > a:hover, a:visited {
@@ -264,7 +265,12 @@ ul#secondary-menu > li.current_page_item > a:hover, a:visited, ul.bottom-nav > l
 }
   
 #footer {
-  background: #86BC25 !important;
+  /*background: #86BC25 !important;*/
+  background-color: #fff !important;
+}
+
+#footer-bottom-bg div.container {
+	background-color: #86BC25;
 }
 
 #footer-widgets {
